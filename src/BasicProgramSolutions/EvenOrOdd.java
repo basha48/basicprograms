@@ -2,6 +2,8 @@ package BasicProgramSolutions;
 
 import java.util.Scanner;
 
+import Utility.Utilityfunctions;
+
 public class EvenOrOdd {
 
 	public static void main(String[] args) {
@@ -9,14 +11,9 @@ public class EvenOrOdd {
 		Scanner sc =new Scanner(System.in);
     int Number= sc.nextInt();
     
-    if(Number % 2 ==0) {
-    	System.out.print(  Number+ " Number is even  ");
-    	
-    }
-    else {
-    	System.out.print(  Number+ " Number is odd  ");
-    	
-    }
+String CheckEvenOdd =Utilityfunctions.Checkevenodd(Number);
+
+System.out.println(CheckEvenOdd);
     }
     
 	}

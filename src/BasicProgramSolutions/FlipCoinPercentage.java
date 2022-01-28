@@ -2,6 +2,8 @@ package BasicProgramSolutions;
 
 import java.util.Scanner;
 
+import Utility.Utilityfunctions;
+
 public class FlipCoinPercentage {
 
 	public static void main(String[] args) {
@@ -12,10 +14,11 @@ public class FlipCoinPercentage {
 		Scanner sc =new Scanner(System.in);
 		
 		System.out.print("The number of times to Flip Coin : ");
-		
+	
 		double UserValue=sc.nextDouble();
 		 for(int i=1;i<=UserValue;i++) {
-			Result =(float)(Math.random());
+		//Result =(float)(Math.random());
+		 Result = (float)Utilityfunctions.random();
 			//System.out.print("Random number is " +Result);
 			
 			 if(Result<0.5) {

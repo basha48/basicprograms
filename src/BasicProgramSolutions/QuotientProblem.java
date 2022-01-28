@@ -2,6 +2,8 @@ package BasicProgramSolutions;
 
 import java.util.Scanner;
 
+import Utility.Utilityfunctions;
+
 public class QuotientProblem {
 
 	public static void main(String[] args) {
@@ -14,8 +16,8 @@ public class QuotientProblem {
       int divisor= scanner.nextInt();
 		 
 
-	    int quotient = dividend / divisor;
-	    int remainder = dividend % divisor;
+	    int quotient =Utilityfunctions.Quotient(dividend, divisor);
+	    int remainder =Utilityfunctions.Remainder(dividend, divisor);
 
 	    System.out.println("Quotient = " + quotient);
 	    System.out.println("Remainder = " + remainder);

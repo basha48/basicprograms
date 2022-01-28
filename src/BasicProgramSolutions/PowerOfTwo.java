@@ -2,6 +2,8 @@ package BasicProgramSolutions;
 
 import java.util.Scanner;
 
+import Utility.Utilityfunctions;
+
 public class PowerOfTwo {
 
 	public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class PowerOfTwo {
 		for(int i=1;i<=uservalue;i++) {
 		if(uservalue<32)
          {
-			 result=Math.pow(2, i);
+			 result=Utilityfunctions.power(2, i);
              System.out.println(2 + " " +" to power of " +i+ "=" + result);
          }
 	}
